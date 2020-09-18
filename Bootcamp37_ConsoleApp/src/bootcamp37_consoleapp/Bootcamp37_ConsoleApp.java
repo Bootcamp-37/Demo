@@ -17,6 +17,8 @@ public class Bootcamp37_ConsoleApp {
     public static void main(String[] args) {
         //Aqira
         System.out.println("Nama saya Aqira");
+        //Fikri
+        System.out.println("Kalau saya Fikri");
     }
     
 }
