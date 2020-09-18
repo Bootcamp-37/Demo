@@ -15,10 +15,6 @@ public class Bootcamp37_ConsoleApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        
-        
-        
         //nisa
         System.out.println("Kalo saya nisa");
         
