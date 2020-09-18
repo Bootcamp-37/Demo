@@ -19,6 +19,8 @@ public class Bootcamp37_ConsoleApp {
         System.out.println("Nama saya Aqira");
         //Fikri
         System.out.println("Kalau saya Fikri");
+        //Ini kode hrsnya udah beres sih
+        //iya ga
     }
     
 }
