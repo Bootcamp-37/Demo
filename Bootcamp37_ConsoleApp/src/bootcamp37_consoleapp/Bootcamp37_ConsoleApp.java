@@ -15,10 +15,11 @@ public class Bootcamp37_ConsoleApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        
+        //Aqira
+        System.out.println("Nama saya Aqira");
         //Fikri
         System.out.println("Kalau saya Fikri");
+        //aaaa
     }
     
 }
