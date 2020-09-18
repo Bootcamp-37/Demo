@@ -15,7 +15,8 @@ public class Bootcamp37_ConsoleApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Aqira
+        System.out.println("Nama saya Aqira");
     }
     
 }
