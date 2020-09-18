@@ -16,6 +16,12 @@ public class Bootcamp37_ConsoleApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
+        
+        //nisa
+        System.out.println("Kalo saya nisa");
+        
     }
     
 }
