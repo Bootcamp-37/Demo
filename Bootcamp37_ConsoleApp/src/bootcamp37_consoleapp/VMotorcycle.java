@@ -9,73 +9,71 @@ package bootcamp37_consoleapp;
  *
  * @author Laila
  */
-public class VehicleCount extends Vehicle {
+public class VMotorcycle extends Vehicle{
 
-//    protected double distance;
-//    protected double time;
-//    protected double mass;
-//    protected double velocity;
-////    protected double momentum;
-
+    public VMotorcycle(){
+        
+    }
     @Override
-    protected double countVelocity(double distance, double time) {
+    public double countVelocity(double distance, double time) {
     velocity=distance/time;
         System.out.println("RESULT OF VELOCITY is "+velocity+"km/hours");
     return velocity;
     }
 
     @Override
-    protected void setDistance(double distance) {
+    public void setDistance(double distance) {
      this.distance=distance;  
     }
 
     @Override
-    protected void setTime(double time) {
+    public void setTime(double time) {
      this.time=time;   
     }
 
     @Override
-    protected void setMass(double mass) {
+    public void setMass(double mass) {
         this.mass=mass;
     }
 
     @Override
-    protected void setVelocity(double velocity) {
+    public void setVelocity(double velocity) {
         this.velocity=velocity;
     }
 
     @Override
-    protected void setMomentum() {
+    public void setMomentum() {
         
     }
 
     @Override
-    protected double getDistance() {
+    public double getDistance() {
         return distance;
     }
 
     @Override
-    protected double getTime() {
+    public double getTime() {
         return time;
     }
 
     @Override
-    protected double getMass() {
+    public double getMass() {
        return mass;
     }
 
     @Override
-    protected double getVelocity() {
+    public double getVelocity() {
         return velocity;
     }
 
     @Override
-    protected double getMomentum() {
+    public double getMomentum() {
         return momentum;
     }
 
     @Override
-    protected void countMomentum(double mass, double velocity) {
+    public void countMomentum(double mass, double velocity) {
+        mass=95;
         momentum=mass/velocity;
         System.out.println("THE RESULT OF MOMENTUM IS "+momentum+"kg km/hours");
     }
