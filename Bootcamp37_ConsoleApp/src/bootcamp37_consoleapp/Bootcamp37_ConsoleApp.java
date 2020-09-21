@@ -44,134 +44,136 @@ public class Bootcamp37_ConsoleApp {
             System.out.println("5. AMBULANCE");
             System.out.println("6. COP CAR");
             System.out.println("7. BIKE");
-            System.out.println("PLEASE INSERT YOUR CHOICE [1/2/3/4/5/6/7/8] : ");
+            System.out.println("PLEASE INSERT YOUR CHOICE [1/2/3/4/5/6/7] : ");
             int choice = scanner1.nextInt();
-            if (choice == 1) {
-
-                System.out.println("YOU CHOSE MOTORCYCLE");
-                System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
-                time = scanner1.nextDouble();
-                System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
-                distance = scanner1.nextDouble();
-                if (time > 0 && distance > 0) {
-                    vehiclechoice = "MOTORCYCLE";
-
-                    VMotorcycle mc1 = new VMotorcycle();
-                    mc1.countVelocity(distance, time);
-                    double velocity = mc1.getVelocity();
-
-                    mc1.countMomentum(mass, velocity);
-
-                } else {
-                    throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
-                }
-            } else if (choice == 2) {
-
-                System.out.println("YOU CHOSE ELF/TOUR CAR");
-                System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
-                time = scanner1.nextDouble();
-                System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
-                distance = scanner1.nextDouble();
-                if (time > 0 && distance > 0) {
-                    vehiclechoice = "ELF/TOUR CAR";
-
-                    VElf e1 = new VElf();
-                    e1.countVelocity(distance, time);
-                    double velocity = e1.getVelocity();
-                    e1.countMomentum(mass, velocity);
-
-                } else {
-                    throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
-                }
-            } else if (choice == 3) {
-
-                System.out.println("YOU CHOSE FIRE TRUCK");
-                System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
-                time = scanner1.nextDouble();
-                System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
-                distance = scanner1.nextDouble();
-                if (time > 0 && distance > 0) {
-                    vehiclechoice = "FIRE TRUCK";
-
-                    VFiretruck ft1 = new VFiretruck();
-                    ft1.countVelocity(distance, time);
-                    double velocity = ft1.getVelocity();
-                    ft1.countMomentum(mass, velocity);
-                } else {
-                    throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
-                }
-            } else if (choice == 4) {
-                System.out.println("YOU CHOSE BUS");
-                System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
-                time = scanner1.nextDouble();
-                System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
-                distance = scanner1.nextDouble();
-                if (time > 0 && distance > 0) {
-                    vehiclechoice = "BUS";
-
-                    VBus b1 = new VBus();
-                    b1.countVelocity(distance, time);
-                    double velocity = b1.getVelocity();
-                    b1.countMomentum(mass, velocity);
-                } else {
-                    throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
-                }
-            } else if (choice == 5) {
-
-                System.out.println("YOU CHOSE AMBULANCE");
-                System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
-                time = scanner1.nextDouble();
-                System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
-                distance = scanner1.nextDouble();
-                if (time > 0 && distance > 0) {
-                    vehiclechoice = "AMBULANCE";
-
-                    VAmbulance a1 = new VAmbulance();
-                    a1.countVelocity(distance, time);
-                    double velocity = a1.getVelocity();
-                    a1.countMomentum(mass, velocity);
-
-                } else {
-                    throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
-                }
-            } else if (choice == 6) {
-                
-                System.out.println("YOU CHOSE COP CAR");
-                System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
-                time = scanner1.nextDouble();
-                System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
-                distance = scanner1.nextDouble();
-                if (time > 0 && distance > 0) {
-                    vehiclechoice = "COP CAR";
-
-                    VCopCar cc1 = new VCopCar();
-                    cc1.countVelocity(distance, time);
-                    double velocity = cc1.getVelocity();
-                    cc1.countMomentum(mass, velocity);
-
-                } else {
-                    throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
-                }
-            } else if (choice == 7) {
-                
-                System.out.println("YOU CHOSE BIKE");
-                System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
-                time = scanner1.nextDouble();
-                System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
-                distance = scanner1.nextDouble();
-                if (time > 0 && distance > 0) {
-                    vehiclechoice = "BIKE";
-
-                    VBike bike1 = new VBike();
-                    bike1.countVelocity(distance, time);
-                    double velocity = bike1.getVelocity();
-                    bike1.countMomentum(mass, velocity);
-
-                } else {
-                    throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
-                }
-            } else {
-                System.out.println("YOU DIDN'T CHOSE ANY OF CHOICE");
+            switch (choice) {
+                case 1:
+                    System.out.println("YOU CHOSE MOTORCYCLE");
+                    System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
+                    time = scanner1.nextDouble();
+                    System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
+                    distance = scanner1.nextDouble();
+                    if (time > 0 && distance > 0) {
+                        vehiclechoice = "MOTORCYCLE";
+                        
+                        Vehicle mc1 = new Vehicle();
+                        mc1.countVelocity(distance, time);
+                        double velocity = mc1.getVelocity();
+                        VMotorcycle mc2= new VMotorcycle();
+                        mc2.countMomentum(mass, velocity);
+                        
+                    } else {
+                        throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
+                    }   break;
+                case 2:
+                    System.out.println("YOU CHOSE ELF/TOUR CAR");
+                    System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
+                    time = scanner1.nextDouble();
+                    System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
+                    distance = scanner1.nextDouble();
+                    if (time > 0 && distance > 0) {
+                        vehiclechoice = "ELF/TOUR CAR";
+                        
+                        Vehicle e1 = new Vehicle();
+                        e1.countVelocity(distance, time);
+                        double velocity = e1.getVelocity();
+                        VElf e2 = new VElf();
+                        e2.countMomentum(mass, velocity);
+                        
+                    } else {
+                        throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
+                    }   break;
+                case 3:
+                    System.out.println("YOU CHOSE FIRE TRUCK");
+                    System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
+                    time = scanner1.nextDouble();
+                    System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
+                    distance = scanner1.nextDouble();
+                    if (time > 0 && distance > 0) {
+                        vehiclechoice = "FIRE TRUCK";
+                        
+                          Vehicle ft1 = new Vehicle();
+                        ft1.countVelocity(distance, time);
+                        double velocity = ft1.getVelocity();
+                        VFiretruck ft2 = new VFiretruck();
+                        ft2.countMomentum(mass, velocity);
+                    } else {
+                        throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
+                    }   break;
+                case 4:
+                    System.out.println("YOU CHOSE BUS");
+                    System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
+                    time = scanner1.nextDouble();
+                    System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
+                    distance = scanner1.nextDouble();
+                    if (time > 0 && distance > 0) {
+                        vehiclechoice = "BUS";
+                        
+                        Vehicle b1 = new Vehicle();
+                        b1.countVelocity(distance, time);
+                        double velocity = b1.getVelocity();
+                        VBus b2 = new VBus();
+                        b2.countMomentum(mass, velocity);
+                    } else {
+                        throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
+                    }   break;
+                case 5:
+                    System.out.println("YOU CHOSE AMBULANCE");
+                    System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
+                    time = scanner1.nextDouble();
+                    System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
+                    distance = scanner1.nextDouble();
+                    if (time > 0 && distance > 0) {
+                        vehiclechoice = "AMBULANCE";
+                        
+                         Vehicle a1 = new Vehicle();
+                        a1.countVelocity(distance, time);
+                        double velocity = a1.getVelocity();
+                        VAmbulance a2 = new VAmbulance();
+                        a2.countMomentum(mass, velocity);
+                        
+                    } else {
+                        throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
+                    }   break;
+                case 6:
+                    System.out.println("YOU CHOSE COP CAR");
+                    System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
+                    time = scanner1.nextDouble();
+                    System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
+                    distance = scanner1.nextDouble();
+                    if (time > 0 && distance > 0) {
+                        vehiclechoice = "COP CAR";
+                        
+                       Vehicle cc1 = new Vehicle();
+                        cc1.countVelocity(distance, time);
+                        double velocity = cc1.getVelocity();
+                         VCopCar cc2 = new VCopCar();
+                        cc2.countMomentum(mass, velocity);
+                        
+                    } else {
+                        throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
+                    }   break;
+                case 7:
+                    System.out.println("YOU CHOSE BIKE");
+                    System.out.println("INSERT HOW LONG YOU RIDE IN HOUR");
+                    time = scanner1.nextDouble();
+                    System.out.println("INSERT HOW FAR YOU RIDE IN KILOMETER");
+                    distance = scanner1.nextDouble();
+                    if (time > 0 && distance > 0) {
+                        vehiclechoice = "BIKE";
+                        
+                       Vehicle bike1 = new Vehicle();
+                        bike1.countVelocity(distance, time);
+                        double velocity = bike1.getVelocity();
+                         VBike bike2 = new VBike();
+                        bike2.countMomentum(mass, velocity);
+                        
+                    } else {
+                        throw new IllegalArgumentException("INPUT CAN'T BE 0 OR NEGATIVE");
+                    }   break;
+                default:
+                    System.out.println("YOU DIDN'T CHOSE ANY OF CHOICE");
+                    break;
             }
         } catch (InputMismatchException | ArithmeticException e) {
             err = 1;

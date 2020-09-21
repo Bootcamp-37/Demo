@@ -11,25 +11,6 @@ package bootcamp37_consoleapp;
  */
 public interface VehicleInterface {
 
-    void setDistance(double distance);
-
-    void setTime(double time);
-
-    void setMass(double mass);
-
-    void setVelocity(double velocity);
-
-    void setMomentum();
-
-    double getDistance();
-
-    double getTime();
-
-    double getMass();
-
-    double getVelocity();
-
-    double getMomentum();
 
     double countVelocity(double distance, double time);
 
