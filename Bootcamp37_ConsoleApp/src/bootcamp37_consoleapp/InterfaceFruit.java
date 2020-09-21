@@ -11,5 +11,5 @@ package bootcamp37_consoleapp;
  */
 public interface InterfaceFruit {
     public void Description ();
-    
+    public void setWeight(double weight);
 }

@@ -34,8 +34,9 @@ public class Grape extends Fruit{
         return weight;
     }
 
+    @Override
     public void setWeight(double weight) {
-        this.weight = weight;
+        this.weight = weight * 15;
         if (this.volume > 0) {
             double density = this.weight / this.volume;
             this.setDensity(density);
@@ -61,8 +62,8 @@ public class Grape extends Fruit{
     @Override
     public void Description() {
         System.out.println("This is a Grape Fruit");
-        System.out.println("Volume: "+this.getVolume());
-        System.out.println("Weight: "+this.getWeight());
-        System.out.println("Density: "+this.getDensity());
+        System.out.println("Volume: "+this.getVolume()+ "cm3");
+        System.out.println("Weight: "+this.getWeight()+ "gr");
+        System.out.println("Density: "+this.getDensity()+ "gr/cm3");
     }
 }

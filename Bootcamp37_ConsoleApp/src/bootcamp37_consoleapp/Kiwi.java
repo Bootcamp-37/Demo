@@ -34,6 +34,7 @@ public class Kiwi extends Fruit{
         return weight;
     }
 
+    @Override
     public void setWeight(double weight) {
         this.weight = weight;
         if (this.volume > 0) {
@@ -61,8 +62,8 @@ public class Kiwi extends Fruit{
     @Override
     public void Description() {
         System.out.println("This is a Kiwi Fruit");
-        System.out.println("Volume: "+this.getVolume());
-        System.out.println("Weight: "+this.getWeight());
-        System.out.println("Density: "+this.getDensity());
+        System.out.println("Volume: "+this.getVolume()+ "cm3");
+        System.out.println("Weight: "+this.getWeight()+ "gr");
+        System.out.println("Density: "+this.getDensity()+ "gr/cm3");
     }
 }
