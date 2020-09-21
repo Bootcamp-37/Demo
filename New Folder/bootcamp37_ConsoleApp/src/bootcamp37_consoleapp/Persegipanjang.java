@@ -29,6 +29,7 @@ public class Persegipanjang extends Shape {
         this.panjang = panjang;
     }
     
+    @Override
     public void setLebar(double lebar){
         this.lebar = lebar;
     }
@@ -45,7 +46,5 @@ public class Persegipanjang extends Shape {
     public String toString(){
     return "Persegi Panjang \n"+
             "Luas Persegi Panjang adalah "+this.getArea();}
-    
-    
     
 }

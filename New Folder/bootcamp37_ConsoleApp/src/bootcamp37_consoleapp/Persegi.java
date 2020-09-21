@@ -14,6 +14,7 @@ public class Persegi extends Shape {
     public double getSisi(){
         return this.sisi;}
     
+    @Override
     public void setSisi(double sisi){
         this.sisi = sisi;
     }

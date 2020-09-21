@@ -4,7 +4,7 @@ package bootcamp37_consoleapp;
  *
  * @author Deo Lahara
  */
-public abstract class Shape implements ShapeInterface {
+public  class Shape implements ShapeInterface {
     protected double radius=0;
     protected double sisi=0;
     protected double panjang=0;
@@ -13,4 +13,24 @@ public abstract class Shape implements ShapeInterface {
     protected double smiring=0;
     protected double area;
     protected double volume;
+
+    void setRadius(double radius) {
+        }
+
+    void setSisi(double sisi) {
+        }
+
+    void setPanjang(double panjang) {
+        }
+
+    void setLebar(double lebar) {
+        }
+
+    void setTinggi(double tinggi) {
+    }
+
+    @Override
+    public void Description() {
+            }
+    
 }

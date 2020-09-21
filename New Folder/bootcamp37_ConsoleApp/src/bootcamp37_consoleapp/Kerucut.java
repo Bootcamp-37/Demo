@@ -21,10 +21,12 @@ public class Kerucut extends Shape{
         return this.tinggi;
     }
     
+    @Override
     public void setRadius(double radius){
         this.radius = radius;
     }
     
+    @Override
     public void setTinggi(double tinggi){
         this.tinggi = tinggi;
     }
@@ -33,6 +35,7 @@ public class Kerucut extends Shape{
     return (Math.PI*this.radius*this.radius*this.tinggi);
     }
     
+    @Override
     public void Description(){
         System.out.println("Kerucut");
         System.out.println("Volume Kerucut adalah "+this.getVolume());}
@@ -41,4 +44,4 @@ public class Kerucut extends Shape{
         return "Kerucut"+
                 "Volume Kerucut adalah "+this.getVolume();}
     }
-}
+

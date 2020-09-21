@@ -21,10 +21,12 @@ public class Tabung extends Shape{
         return this.tinggi;
     }
     
+    @Override
     public void setRadius(double radius){
         this.radius = radius;
     }
     
+    @Override
     public void setTinggi(double tinggi){
         this.tinggi = tinggi;
     }
@@ -32,6 +34,7 @@ public class Tabung extends Shape{
     public double getVolume(){
     return Math.PI*this.radius*this.radius*this.tinggi;}
     
+    @Override
     public void Description(){
         System.out.println("Tabung");
         System.out.println("Volume Tabung adalah "+this.getVolume());}
@@ -40,4 +43,4 @@ public class Tabung extends Shape{
         return "Tabung"+
                 "Volume Tabung adalah "+this.getVolume();}
     }
-}
+

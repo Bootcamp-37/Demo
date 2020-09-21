@@ -15,6 +15,7 @@ public class Kubus extends Shape {
         return this.sisi;
     }
     
+    @Override
     public void setSisi(double sisi){
         this.sisi = sisi;
     }
